@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lora:wght@400;600&family=Poppins:wght@200;400;700&display=swap');
+
+:root {
+  --primary-color: rgb(247, 237, 220);
+  --primary-color-darker: rgb(2, 15, 17);
+  --salmon-color: rgb(252, 230, 215);
+  --salmon-darker: rgb(255, 115, 0);
+  /* DARK MODE COLORS  */
+
+  --primary-dark-color: rgb(44, 44, 44);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* ------------------------------------ HEADER INICIO ------------------------------------ */
+
+
+.nav-bar {
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.5rem 6rem;
+  background-color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 600;
+
+  font-family: 'Lora', serif;
+
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+
+
+.logo img {
+  display: flex;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item a {
+  margin-right: 10px;
+}
+
+
+a {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-family: 'Lora', sans-serif;
+  font-size: 20px;
+
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav-list ul {
+  gap: 55px;
+
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: var(--primary-color);
+  top: 0;
+
+}
+
+
+
+body {
+
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-color);
+  font-family: 'Lora', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+
+  overflow-x: hidden;
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+
+}
+
+.nav-item a:hover {
+  color: var(--salmon-darker);
+}
+
+.scroll-shadow {
+  box-shadow: 0 4px 11px var(--salmon-color);
+}
+
+
+/* ------------------------------------ MAIN CONTENT ------------------------------------ */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  width: 78%;
+  margin-inline: auto;
+  margin-top: 15vh;
+  font-family: 'Lora';
+  font-weight: 400;
+  letter-spacing: 1.2px;
+
+
+}
+
+.container h1 {
+  line-height: 49px;
+}
+
+.container p {
+  font-size: 15px;
+
+}
+
+.container button {
+  height: 38px;
+  width: 39%;
+  border: none;
+  background-color: rgb(255, 115, 0);
+  border-radius: 29px;
+
+  color: white;
+  font-family: 'Lora';
+  font-weight: 700;
+  letter-spacing: 1.1px;
+
+  margin-top: 10px;
+}
+
+.container button:hover {
+  transition: .3s ease;
+  transform: skew(2deg, 2deg);
+}
+
+.open {
+  display: block;
+}
+
+/* ------------------------------------  Second Container ------------------------------------ */
+
+.second {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 45rem;
+
+  margin: auto;
+
+  font-family: 'Lora';
+  font-weight: 400;
+  letter-spacing: 1.2px;
+
+
+}
+
+.second h2 {
+
+  margin-bottom: 8px;
+  line-height: 46px;
+  font-family: 'Poppins';
+}
+
+.second p {
+  font-size: 15px;
+
+}
+
+.second p:first-child {
+  font-family: 'Dancing Script', cursive;
+  color: var(--salmon-darker);
+  font-size: 35px;
+  margin-bottom: 8px;
+}
+
+.right-2 img {
+
+  width: 60%;
+}
+
+.right-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+}
+
+.left-2 {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.left-2 h2,
+p {
+  width: 70%;
+}
+
+/* ------------------------------------  DarkMode Colors ------------------------------------ */
+.darkColor {
+  background-color: var(--primary-dark-color);
+  color: white;
+}
+
+
+.colorWhite {
+  color: white;
+
+}
+
+.blackColor {
+  color: black;
+}
+
+/* ------------------------------------  Third Section ------------------------------------ */
+.third {
+  width: 100vw;
+
+
+  margin: auto;
+}
+
+.titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 115px;
+}
+
+.titles span {
+  font-family: 'Dancing Script', cursive;
+  color: var(--salmon-darker);
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+
+.titles h3 {
+  font-size: 35px;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1.1px;
+}
+
+
+/* ------------------------------------  Cards ------------------------------------ */
+.card-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 45px;
+  gap: 175px;
+  margin-bottom: 55px;
+
+  flex-wrap: wrap;
+}
+
+.card-1 {
+  width: 229px;
+  height: 265px;
+  border-radius: 15px;
+  background-color: var(--primary-dark-color);
+  color: white;
+  box-shadow: 0px 11px 21px rgb(29, 28, 28);
+  border: none;
+
+}
+
+.card-2 {
+  width: 229px;
+  height: 265px;
+  border-radius: 15px;
+  background-color: var(--primary-dark-color);
+  color: white;
+  box-shadow: 0px 11px 21px rgb(29, 28, 28);
+  border: none;
+
+}
+
+.card-3 {
+  width: 229px;
+  height: 265px;
+  border-radius: 15px;
+  background-color: var(--primary-dark-color);
+  color: white;
+  box-shadow: 0px 11px 21px rgb(29, 28, 28);
+  border: none;
+
+}
+
+.card-section img {
+  width: 230px;
+
+}
+
+.card-section img:hover {
+  transform: translatey(-14.1px);
+  transition: .5s ease-in-out;
+}
+
+#combinado {
+  font-size: 19px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lora';
+  font-weight: 600;
+}
+
+#price {
+  text-align: center;
+  margin-left: 5px;
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--salmon-darker);
+  font-family: 'Poppins', sans-serif;
+}
+
+.price-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-inline: 35px;
+  margin-top: 15px;
+}
+
+.fa-basket-shopping {
+  width: 23px;
+  height: 23px;
+  padding: 5px;
+  background-color: var(--salmon-darker);
+  border-radius: 50%;
+  color: rgb(235, 231, 231);
+  cursor: pointer;
+}
+
+.fa-basket-shopping:hover {
+  transform: scale(1.1);
+  transition: .3s ease-in;
+}
+
+/* ------------------------------------  Footer ------------------------------------ */
+footer {
+  margin-top: 200px;
+  width: 100%;
+  height: 250px;
+  border-top: 2px solid var(--salmon-darker);
+}
+
+.section-footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 85px;
+  margin-top: 50px;
+
+  font-family: 'Lora ';
+  font-weight: 300;
+}
+
+.section-footer h3 {
+  width: 150px;
+  letter-spacing: 1.2px;
+}
+
+.section-footer p {
+  font-size: 14px;
+  letter-spacing: 1.1px;
+  width: 100px;
+  font-weight: 200;
+  font-family: 'Lora';
+  color: var(--salmon-darker);
+  cursor: pointer;
+}
+
+.infos {
+  width: 15%;
+
+}
+
+.adress {
+  width: 15%;
+}
+
+.social-media {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.icons {
+  color: var(--salmon-darker);
+  gap: 15px;
+  display: flex;
+
+}
+
+.fa-square-instagram,
+.fa-square-whatsapp,
+.fa-square-facebook {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.fa-square-instagram:hover,
+.fa-square-whatsapp:hover,
+.fa-square-facebook:hover {
+  transform: scale(1.1);
+}
+
+/* ------------------------------------  RESPONSIVO ------------------------------------ */
+
+@media screen and (max-width: 930px) {
+
+  /* ------------------------------------ HEADER RESPONSIVO ------------------------------------ */
+  .nav-bar {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+
+
+  }
+
+  .logo {
+    z-index: 2;
+  }
+
+  .mobile-menu {
+    padding-top: 55px;
+    padding-bottom: 25px;
+    left: 0;
+    box-shadow: 0 3px 70px rgb(34, 33, 33);
+    font-size: 20px;
+
+    font-family: 'Lora';
+    font-weight: 400;
+    color: rgb(48, 46, 46);
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+
+  .moon {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+
+  }
+
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+    align-items: center;
+    margin-top: 25px;
+  }
+
+  .mobile-menu .nav-item {
+    display: block;
+    padding-top: 1.2rem;
+  }
+
+  .open {
+    display: block;
+  }
+
+  /* ------------------------------------ MAIN RESPONSIVO ------------------------------------ */
+  .container {
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .right img {
+    width: 60vw;
+    display: flex;
+    align-self: center;
+    align-items: center;
+
+    margin-top: 45px;
+  }
+
+  .left {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80vw;
+  }
+
+  /* ------------------------------------ Second Container RESPONSIVO ------------------------------------ */
+  .second {
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .second img {
+    width: 60vw;
+    display: flex;
+    align-self: center;
+    align-items: center;
+
+    margin-top: 345px;
+  }
+
+  .left-2 {
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    width: 80vw;
+  }
+
+  .third {
+    margin-top: 260px;
+  }
+
+  /* ------------------------------------ Footer Container RESPONSIVO ------------------------------------ */
+
+  .section-footer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20vw;
+
+  }
+
+  .social-media {
+    margin-bottom: 55px;
+  }
+}
