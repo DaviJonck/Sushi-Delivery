@@ -9,6 +9,11 @@
 - JavaScript
 - Git e Github
 
+
+## Live Result 
+https://davijonck.github.io/Sushi-Delivery/
+
+
 ## Contato 🤚 
 
 contatodavij@gmail.com
